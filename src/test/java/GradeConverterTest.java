@@ -24,4 +24,22 @@ public class GradeConverterTest {
         String actual = converter.convert(90);
         assertEquals(expected, actual);
     }
+    @Test
+    public void testconvert3() {
+        String expected = "E";
+        String actual = converter.convert(50);
+        assertEquals(expected, actual);
+    }
+    @Test
+    public void testconvert4() {
+        String expected = "Invalid";
+        String actual = converter.convert(-75);
+        assertEquals(expected, actual);
+    }
+    @Test
+    public void testconvert5() {
+        String expected = "Invalid";
+        String actual = converter.convert(140);
+        assertEquals(expected, actual);
+    }
 }
